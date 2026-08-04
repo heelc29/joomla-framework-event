@@ -31,5 +31,10 @@
             "Joomla\\Event\\Tests\\": "Tests/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-4.x-dev": "4.x-dev"
+        }
+    }
 }
