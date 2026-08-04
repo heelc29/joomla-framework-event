@@ -154,7 +154,7 @@ class ListenersPriorityQueueTest extends TestCase
         $this->assertSame($this->instance, $this->instance->add($listener1, 10), 'The add method has a fluent interface');
         $this->assertSame($this->instance, $this->instance->add($listener2, 3), 'The add method has a fluent interface');
 
-        $this->assertEquals($this->instance->getIterator(), $this->instance->getIterator());
+        $this->assertEquals(iterator_to_array($this->instance->getIterator()), iterator_to_array($this->instance->getIterator()));
     }
 
     /**
